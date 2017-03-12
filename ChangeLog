@@ -1,0 +1,47 @@
+CHANGES
+=======
+
+* Make test running and coverage analysis consider namespace package
+* Make libindic a namespace package
+* Update readme for matching new directory structure
+* Add CircleCI configuration file
+* Add tox integration
+* Add a test for Malayalam syllablengram
+* Add travis
+* Fix package name
+* Add testrepository support
+* Tweak tests to use testtools
+* Move to libindic.module strucure
+* Ignore intermediate files during build and test
+* Add requirements for running and tests
+* Add makefile for building
+* Move tests to package
+* Use pbr for packaging
+* PEP8 compliance
+* Run Autopep8 on docs
+* Fix relative imports for Python3 sypport
+* Fixing broken link
+* add jquery.ime
+* new ui
+* javascript code improvements
+* Version bumped 0.4. Docs added and template renamed
+* changin template to reflect module rename
+* adding an intro to docs
+* adding sphinx based docs
+* adding more docstrings
+* pep8 cleaning in tests
+* added test cases for english
+* template name needs to match module name
+* Bumped version to 0.3
+* rename syllabalizer module to indicsyllabifier
+* Version is bumped to 0.2
+* Package depend on indicsyllabifier not syllabalizer
+* Module named as indicngram
+* Version is 0.1 and wrap long description
+* Wrap lines to 80 characters
+* Ignore .ropeproject created by elpy
+* added templates
+* fixed imports
+* pep8 cleaning
+* Update README.md
+* Initial commit
