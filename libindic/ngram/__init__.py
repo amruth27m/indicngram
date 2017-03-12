@@ -43,7 +43,7 @@ class Ngram:
         words = text.split(" ")
         ngrams = []
         for word in words:
-	    word = self.normalizer.normalize(word)
+            word = self.normalizer.normalize(word)
             syllables = self.syllabifier.syllabify(word)
             syllable_count = len(syllables)
             window_start = 0
