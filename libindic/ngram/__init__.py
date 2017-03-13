@@ -19,16 +19,14 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 import indicsyllabifier
-import normalizer
-
-
+import normalizer.core
 class Ngram:
     """
     Ngram class.You need to create an object to use the function
     """
 
     def __init__(self):
-        self.normalizer = normalizer.getInstance()
+        self.normalizer = normalizer.core.getInstance()
         self.syllabifier = indicsyllabifier.getInstance()
 
     def syllableNgram(self, text, window_size=2):
