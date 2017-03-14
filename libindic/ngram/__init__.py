@@ -19,14 +19,16 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 #
 import indicsyllabifier
-import normalizer.core
+from normalizer.core import Normalizer,getInstance
+
+
 class Ngram:
     """
     Ngram class.You need to create an object to use the function
     """
 
     def __init__(self):
-        self.normalizer = normalizer.core.getInstance()
+        self.normalizer = Normalizer()
         self.syllabifier = indicsyllabifier.getInstance()
 
     def syllableNgram(self, text, window_size=2):
@@ -67,7 +69,7 @@ class Ngram:
         word = word.strip()
         ngrams = []
         word = self.normalizer.normalize(word)
-        letter_count = len(word)
+	letter_count = len(word)
         window_start = 0
         window_end = 0
         while window_start + window_size <= letter_count:
